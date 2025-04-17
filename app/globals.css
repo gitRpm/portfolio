@@ -26,28 +26,40 @@
 }
 
 @layer utilities {
-  .h1 {
-    font-family: var(--font-roboto-condensed);
-    font-size: var(--text-6xl);
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: var(--tracking-tight);
-  }
-
   .h2 {
     font-family: var(--font-geist-mono);
-    font-size: var(--text-xl);
-    font-weight: 600;
+    font-size: 1.25rem;
+  }
+
+  
+
+  
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--color-background)] text-[var(--color-foreground)];
+  }
+
+  h1 {
+    @apply font-bold font-(family-name:--font-roboto-condensed) tracking-tight
+    text-6xl mb-4
+    md:text-7xl;
+  }
+
+  h2 {
+    @apply font-medium font-(family-name:--font-geist-mono)
+    text-xl
+    md:text-2xl;
   }
 
   .h3 {
-    font-family: var(--font-roboto-condensed);
-    font-size: var(--text-xl);
-    font-weight: 700;
+    @apply font-bold font-(family-name:--font-roboto-condensed)
+    text-lg
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: var(--color-white);
+    @apply text-(color:--color-white);
   }
 }
 
@@ -56,10 +68,4 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
