@@ -11,7 +11,7 @@ export default function Home() {
       <main className="lg:basis-[52%] py-12 lg:pt-20">
         <p className="text-2xl font-semibold mb-4">placeholder</p>
       </main>
-      <footer className="lg:absolute lg:bottom-6">
+      <footer className="lg:absolute lg:bottom-12 text-lg">
         <p className="lg:max-w-sm">Built with <b>Next.js</b>, <b>Tailwind CSS</b>, and <b>TypeScript</b>, and is hosted on <b>Vercel.</b></p>
       </footer>
     </div>
