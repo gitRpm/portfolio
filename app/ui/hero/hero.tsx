@@ -20,7 +20,7 @@ export const Hero: React.FC = () => {
         Full Stack Engineer
       </h2>
       <p className="text-lg mt-6 max-w-xs">
-        I build clean, scalable, and performant applications for the web.
+        I build clean, scalable, and performant solutions for the web.
       </p>
       <div className="mt-10">
         {/* <Button label="Connect" onClick={() => {}} /> */}
