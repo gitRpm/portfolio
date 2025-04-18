@@ -41,7 +41,8 @@ export default function Home() {
         <p className="text-2xl font-semibold mb-4">placeholder</p>
       </main>
       <footer className="lg:absolute lg:bottom-12 text-lg">
-        <p className="lg:max-w-sm">Built with <b>Next.js</b>, <b>Tailwind CSS</b>, and <b>TypeScript</b>, and is hosted on <b>Vercel.</b></p>
+        <p>Built with <b>Next.js</b>, <b>Tailwind CSS</b>, and <b>TypeScript</b>.</p>
+        <p>Hosted on <b>Vercel.</b></p>
       </footer>
     </div>
   );

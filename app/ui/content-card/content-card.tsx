@@ -25,14 +25,14 @@ const ContentCard: React.FC<ContentCardProps> = ({
       <div className="flex justify-between w-full">
         <div>
           <h3>{title}</h3>
-          <a className="font-medium leading-tight hover:text-[var(--color-mint-400)] focus-visible:text-[var(--color-mint-400)] group/link text-base"
+          <a className="font-medium text-[var(--color-white)] leading-tight hover:text-[var(--color-mint-400)] focus-visible:text-[var(--color-mint-400)] group/link text-base"
             href={url}
             target="_blank"
             rel="noreferrer noopener"
             aria-label={ariaLabel}
           >
             <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-            <span className="inline-block group-hover/link:text-[var(--color-mint-400)] group-focus-visible/link:text-[var(--color-mint-400)]">
+            <span className="inline-block font-medium font-(family-name:--font-roboto-condensed) text-base">
               {subtitle}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,15 +42,15 @@ const ContentCard: React.FC<ContentCardProps> = ({
                 aria-hidden="true"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
               </svg>
             </span>
           </a>
         </div>
-        <span>{meta}</span>
+        <span><i>{meta}</i></span>
       </div>
       <p className="mt-2 text-sm">
         {description}

@@ -25,24 +25,17 @@
   }  
 }
 
-@layer utilities {
-  .h2 {
-    font-family: var(--font-geist-mono);
-    font-size: 1.25rem;
-  }
-
-  
-
-  
-}
-
 @layer base {
   body {
     @apply bg-[var(--color-background)] text-[var(--color-foreground)];
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-(color:--color-white) font-(family-name:--font-roboto-condensed);
+  }
+
   h1 {
-    @apply font-bold font-(family-name:--font-roboto-condensed) tracking-tight
+    @apply font-bold tracking-tight
     text-6xl mb-4
     md:text-7xl;
   }
@@ -53,13 +46,9 @@
     md:text-2xl;
   }
 
-  .h3 {
-    @apply font-bold font-(family-name:--font-roboto-condensed)
+  h3 {
+    @apply font-bold
     text-lg
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    @apply text-(color:--color-white);
   }
 }
 
