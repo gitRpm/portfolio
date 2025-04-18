@@ -1,5 +1,21 @@
 import { Hero } from "./ui/hero/hero";
 
+const tabs = [
+  {
+    name: "About",
+    content: "About me",
+    href: "#about",
+  }, {
+    name: "Skills",
+    content: "Skills",
+    href: "#projects",
+  }, {
+    name: "Experience",
+    content: "Experience",
+    href: "#contact",
+  }
+];
+
 export default function Home() {
   return (
     <div className="flex flex-col mx-auto max-w-screen-xl px-6 md:px-12 lg:flex-row gap-6">
