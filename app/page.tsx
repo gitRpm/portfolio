@@ -1,6 +1,6 @@
-import ContentCard from "./ui/content-card/content-card";
-import Hero from "@/app/ui/hero/hero";
-import Skills from "./components/skills/skills";
+import Hero from "@/ui/hero/hero.component";
+import SkillList from "@/skill/components/skill-list.component";
+import JobList from "@/job/components/job-list.component";
 
 const tabs = [
   {
@@ -27,17 +27,20 @@ export default function Home() {
         </header>
       </div>
       <main className="lg:basis-[52%] py-12 lg:pt-20">
-        <Skills />
-        {/* <Pill className="!text-base !px-4 !py-2 !font-semibold">Use this for skills list</Pill> */}
-        <ContentCard
-          title="Sr. Software Engineer"
-          subtitle="DriveTime"
-          description="Developed customer-facing experiments to optimize conversion. Partnered with cross-functional teams to integrate third-party financing terms. Designed and managed CI/CD pipelines, ensuring reliable and automated deployments. Regularly conducted code reviews and provided mentorship to junior engineers, promoting code quality and adherence to best practices across teams."
-          meta="Jan 2024 - Present"
-          attributes={["Attribute 1", "Attribute 2", "Attribute 3"]}
-          url="https://www.drivetime.com"
-          ariaLabel="opens drivetime.com in a new tab"
-        />
+        <section>
+          <h2>About</h2>
+          <p className="text-lg">
+            I am a passionate software engineer with a strong background in web development and a keen interest in building user-friendly applications. I thrive in collaborative environments and enjoy tackling complex challenges. My goal is to create impactful solutions that enhance user experiences.
+          </p>
+        </section>
+        <section className="mt-12">
+          <h2>Skills</h2>
+          <SkillList />
+        </section>
+        <section className="mt-12">
+          <h2>Experience</h2>
+          <JobList />
+        </section>
       </main>
       <footer className="lg:fixed lg:bottom-12 text-sm leading-6">
         <p>Built with <b>Next.js</b>, <b>Tailwind CSS</b>, and <b>TypeScript</b>.</p>

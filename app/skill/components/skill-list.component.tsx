@@ -1,16 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
-import skillsData, { Skill } from '@/app/lib/data/skills';
+import skillData from '../data/skill-data';
+import { Skill } from '../types';
 
 interface SkillsProps {
 }
 
-const Skills: React.FC<SkillsProps> = () => {
-  const languagesFrameworksTools: Skill[] = skillsData.filter(skill =>
+const SkillList: React.FC<SkillsProps> = () => {
+  const languagesFrameworksTools: Skill[] = skillData.filter(skill =>
     skill.type === 'Language' || skill.type === 'Framework' || skill.type === 'Tool'
   );
   
-  const practices: Skill[] = skillsData.filter(skill => skill.type === 'Practice');
+  const practices: Skill[] = skillData.filter(skill => skill.type === 'Practice');
 
   return (
     <div>
@@ -53,4 +54,4 @@ const Skills: React.FC<SkillsProps> = () => {
   );
 };
 
-export default Skills;
+export default SkillList;

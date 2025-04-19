@@ -1,4 +1,4 @@
-import Pill from "../pill/pill";
+import Pill from "../pill/pill.component";
 
 type ContentCardProps = {
   title: string;
