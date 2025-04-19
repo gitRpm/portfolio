@@ -1,6 +1,6 @@
 import ContentCard from "./ui/content-card/content-card";
-import Hero from "./ui/hero/hero";
-import Pill from "./ui/pill/pill";
+import Hero from "@/app/ui/hero/hero";
+import Skills from "./components/skills/skills";
 
 const tabs = [
   {
@@ -27,6 +27,7 @@ export default function Home() {
         </header>
       </div>
       <main className="lg:basis-[52%] py-12 lg:pt-20">
+        <Skills />
         {/* <Pill className="!text-base !px-4 !py-2 !font-semibold">Use this for skills list</Pill> */}
         <ContentCard
           title="Sr. Software Engineer"
@@ -38,7 +39,7 @@ export default function Home() {
           ariaLabel="opens drivetime.com in a new tab"
         />
       </main>
-      <footer className="lg:absolute lg:bottom-12 text-lg">
+      <footer className="lg:fixed lg:bottom-12 text-sm leading-6">
         <p>Built with <b>Next.js</b>, <b>Tailwind CSS</b>, and <b>TypeScript</b>.</p>
         <p>Hosted on <b>Vercel.</b></p>
       </footer>

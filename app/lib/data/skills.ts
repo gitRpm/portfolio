@@ -59,9 +59,9 @@ const skills = [
   {
     id: 7,
     title: "Tailwind CSS",
-    type: SkillType.Tool,
+    type: SkillType.Framework,
     description: "Tailwind CSS is a utility-first CSS framework for rapidly building custom designs.",
-    icon: "/tailwind.svg",
+    icon: "/tailwindcss.svg",
   },
   {
     id: 8,
@@ -82,7 +82,7 @@ const skills = [
     title: "Azure DevOps",
     type: SkillType.Tool,
     description: "Azure DevOps is a set of development tools for software development teams.",
-    icon: "/azure.svg",
+    icon: "/azuredevops.svg",
   },
   {
     id: 11,
@@ -187,7 +187,7 @@ const skills = [
     title: "SQL",
     type: SkillType.Language,
     description: "SQL is a standard language for managing and manipulating databases.",
-    icon: "/sql.svg",
+    icon: "/microsoftsqlserver.svg",
   },
 ];
 

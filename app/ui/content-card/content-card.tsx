@@ -52,7 +52,7 @@ const ContentCard: React.FC<ContentCardProps> = ({
           </a>
         </span>
       </div>
-      <p className="mt-6 text-sm">
+      <p className="mt-6 text-sm leading-7">
         {description}
       </p>
       <ul className="mt-4 flex flex-wrap" aria-label="Technologies used">
