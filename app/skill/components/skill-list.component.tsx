@@ -31,7 +31,7 @@ const SkillList: React.FC<SkillsProps> = ({ skills }) => {
           </li>
         ))}
       </ul>
-      <h3 className="mt-22 mb-10">Software Engineering Practices</h3>
+      <h3 className="mt-14 lg:mt-22 mb-10">Software Engineering Practices</h3>
       <ul className="list-none grid sm:grid-cols-2 gap-6 lg:gap-y-10" aria-label="Languages, Frameworks, & Tools">
         {practices.map((skill) => (
           <li key={skill.id} className="flex items-start text-lg font-medium ">
