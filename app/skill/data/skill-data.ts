@@ -171,7 +171,7 @@ const skills: Skill[] = [
   },
   {
     id: 27,
-    title: "SQL",
+    title: "Microsoft SQL Server",
     type: SkillEnum.Language,
     description: "SQL is a standard language for managing and manipulating databases.",
     icon: "/microsoftsqlserver.svg",

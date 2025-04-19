@@ -9,7 +9,6 @@ const Hero: React.FC = () => {
           alt="Code Icon"
           width={50}
           height={50}
-          layout="responsive"
         />
       </span>
       

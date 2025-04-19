@@ -5,7 +5,7 @@ type ContentCardProps = {
   subtitle: string;
   description: string;
   meta: string;
-  attributes: string[];
+  attributes: (string | null | undefined)[];
   url: string;
   ariaLabel: string;
 };
@@ -57,9 +57,11 @@ const ContentCard: React.FC<ContentCardProps> = ({
       </p>
       <ul className="mt-4 flex flex-wrap" aria-label="Technologies used">
         {attributes.map((attribute) => (
-          <li key={attribute} className="mr-1.5 mt-2">
-            <Pill>{attribute}</Pill>
-          </li>
+          attribute && (
+            <li key={attribute} className="mr-1.5 mt-2">
+              <Pill>{attribute}</Pill>
+            </li>
+          )
         ))}
       </ul>
     </div>

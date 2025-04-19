@@ -1,17 +1,18 @@
 import React from 'react';
 import Image from 'next/image';
-import skillData from '../data/skill-data';
 import { Skill } from '../types';
+import { SkillEnum } from '../types';
 
 interface SkillsProps {
+  skills: Skill[];
 }
 
-const SkillList: React.FC<SkillsProps> = () => {
-  const languagesFrameworksTools: Skill[] = skillData.filter(skill =>
-    skill.type === 'Language' || skill.type === 'Framework' || skill.type === 'Tool'
+const SkillList: React.FC<SkillsProps> = ({ skills }) => {
+  const languagesFrameworksTools: Skill[] = skills.filter(skill =>
+    skill.type === SkillEnum.Language || skill.type === SkillEnum.Framework || skill.type === SkillEnum.Tool
   );
   
-  const practices: Skill[] = skillData.filter(skill => skill.type === 'Practice');
+  const practices: Skill[] = skills.filter(skill => skill.type === SkillEnum.Practice);
 
   return (
     <div>
@@ -19,21 +20,18 @@ const SkillList: React.FC<SkillsProps> = () => {
       <ul className="grid grid-cols-3 sm:grid-cols-4 gap-12 mx-auto w-full lg:justify-start lg:gap-x-20" aria-label="Languages, Frameworks, & Tools">
         {languagesFrameworksTools.map((skill) => (
           <li key={skill.id} className="flex flex-col items-center">
-            <div className="h-10 w-10">
-              <Image
-                src={skill.icon}
-                alt={skill.title}
-                width={10}
-                height={10}
-                layout="responsive"
-                aria-label='Icon for {skill.title}'
-              />
-            </div>
+            <Image
+              src={skill.icon}
+              alt={skill.title}
+              width={40}
+              height={40}
+              aria-label='Icon for {skill.title}'
+            />
             <span className="text-center text-sm mt-2">{skill.title}</span>
           </li>
         ))}
       </ul>
-      <h3 className="mt-12 mb-10">Software Engineering Practices</h3>
+      <h3 className="mt-22 mb-10">Software Engineering Practices</h3>
       <ul className="list-none grid sm:grid-cols-2 gap-6 lg:gap-y-10" aria-label="Languages, Frameworks, & Tools">
         {practices.map((skill) => (
           <li key={skill.id} className="flex items-start text-lg font-medium ">
@@ -42,7 +40,6 @@ const SkillList: React.FC<SkillsProps> = () => {
               alt={skill.title}
               width={15}
               height={15}
-              layout="fixed"
               className="inline-block mr-2 mt-2"
               aria-label='Icon for {skill.title}'
             />

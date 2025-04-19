@@ -10,7 +10,7 @@ export const jobs: Job[] = [
     description: "Developed customer-facing experiments to optimize conversion. Partnered with cross-functional teams to integrate third-party financing terms. Designed and managed CI/CD pipelines, ensuring reliable and automated deployments. Regularly conducted code reviews and provided mentorship to junior engineers, promoting code quality and adherence to best practices across teams.",
     imageUrl: "https://via.placeholder.com/150",
     link: "https://companya.com",
-    skills: [3, 4, 12, 26, 10],
+    skills: [3, 4, 12, 26, 10, 9],
     current: true,
   },
   {
@@ -22,7 +22,7 @@ export const jobs: Job[] = [
     description: "Led front-end development for a policy lifecycle tracking application, improving page load performance by 45%. Modernized legacy systems by developing new features with React, resulting in an 85% reduction in reported application flow bugs. Provided strategic input on SDLC enhancements, boosting development throughput by 25%. Actively collaborated with backend teams to deliver seamless, high-performing user experiences in a fast-paced enterprise environment.",
     imageUrl: "https://via.placeholder.com/150",
     link: "https://companyb.com",
-    skills: [12, 3, 5, 4, 9, 10],
+    skills: [12, 3, 5, 4, 10],
     current: false,
   },
   {
@@ -35,7 +35,7 @@ export const jobs: Job[] = [
       "Led major development initiatives across multiple product teams, focusing on scalable front-end architecture and high-traffic retail platforms. Spearheaded the redesign and deployment of a new Sitefinity CMS instance to support multiple storefronts with a shared cart system, aligning technical solutions with complex business requirements. Developed and maintained CI/CD pipelines, improving deployment reliability and velocity. Built interactive UIs with modern JavaScript frameworks to enhance user experience, and implemented a centralized GraphQL API to streamline data access across platforms. Played a key role in AWS-hosted deployments, leveraging services like CloudFront, S3, and ElastiCache to ensure performance and availability.",
     imageUrl: "https://via.placeholder.com/150",
     link: "https://companyc.com",
-    skills: [12, 3, 5, 4, 9, 11, 27],
+    skills: [12, 3, 5, 4, 11, 27],
     current: false,
   },
   {

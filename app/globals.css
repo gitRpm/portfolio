@@ -50,6 +50,14 @@
     @apply font-bold
     text-lg
   }
+
+  .pad-content {
+    @apply px-6;
+  }
+
+  .sticky-header {
+    @apply sticky top-0 mb-10 backdrop-blur-xs bg-[var(--color-background)]/75 z-1 py-2 lg:hidden;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
