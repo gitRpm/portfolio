@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Roboto_Condensed } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -30,8 +31,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${robotoCondensed.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${robotoCondensed.variable} antialiased lg:pt-20`}
       >
+        <header className="lg:fixed top-0 custom-blur w-full h-20 z-99">
+          <div className="px-6 flex items-center justify-between h-full mx-auto lg:max-w-screen-xl md:px-12 lg:px-12">
+            <Image
+              src="/code.svg"
+              alt="Code Icon"
+              width={40}
+              height={40}
+            />
+          </div>
+        </header>
         {children}
       </body>
     </html>

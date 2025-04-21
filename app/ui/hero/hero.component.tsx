@@ -3,15 +3,6 @@ import Image from "next/image";
 const Hero: React.FC = () => {
   return (
     <section>
-      <span className="h-10 w-10 lg:h-12 lg:w-12 flex items-center justify-center mb-4">
-        <Image
-          src="/code.svg"
-          alt="Code Icon"
-          width={50}
-          height={50}
-        />
-      </span>
-      
       <h1>
         Ryan Morris
       </h1>

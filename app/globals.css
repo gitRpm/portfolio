@@ -48,7 +48,7 @@
 
   h3 {
     @apply font-bold
-    text-lg
+    text-lg;
   }
 
   .pad-content {
@@ -56,7 +56,25 @@
   }
 
   .sticky-header {
-    @apply sticky top-0 mb-10 backdrop-blur-xs bg-[var(--color-background)]/75 z-1 py-2 lg:hidden;
+    @apply sticky top-0 mb-6 backdrop-blur-xs z-1 py-2 lg:hidden;
+  }
+
+  .nav-header {
+    @apply font-(family-name:--font-geist-mono) font-normal
+    text-xl
+    md:text-2xl;
+  }
+
+  .nav-active, .default-nav-active {
+    @apply text-[var(--color-white)] font-medium border-b-[var(--color-white)] border-b-2;
+  }
+
+  .custom-blur {
+    @apply backdrop-blur-xs bg-[var(--color-background)]/85;
+  }
+
+  .max-minus-header {
+    @apply max-h-[calc(100vh-4rem)];
   }
 }
 
