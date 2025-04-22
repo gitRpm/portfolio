@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
         Ryan Morris
       </h1>
       <h2>
-        {"{ Full Stack Engineer }"}
+        Full Stack Engineer
       </h2>
       <p className="text-lg mt-6 max-w-xs">
         I build clean, scalable, and performant solutions for the web.
