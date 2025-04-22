@@ -7,6 +7,7 @@ import { getJobs } from "./job/services/job-service";
 import { getSortedSkills } from './skill/services/skill-service';
 import ScrollLink from "./ui/scroll-link/scroll-link.component";
 import UpRightArrow from "./ui/arrow/up-right-arrow.component";
+import { Link } from "./ui/link/link.component";
 
 const Home = async () => {
   const jobs = await getJobs();
@@ -70,12 +71,16 @@ const Home = async () => {
             <div className="pad-content">
               <JobList jobs={jobs} />
               <div className="mt-16">
-                <a className='group/link font-bold text-[var(--color-white)] hover:text-[var(--color-mint-400)]' href='/RyanMorris_Resume.pdf' target='_blank' rel='noopener noreferrer'>   
+                <Link className='group/link font-bold text-[var(--color-white)] hover:text-[var(--color-mint-400)]'
+                  href='/RyanMorris_Resume.pdf'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >   
                   <span className="inline-block">
                     View resume
                     <UpRightArrow />
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </section>
@@ -91,17 +96,17 @@ const Home = async () => {
                 If you’re working on something exciting or just want to connect and chat tech, feel free to reach out!
               </p>
               <div>
-                <a
+                <Link
                   className="group/link font-bold text-[var(--color-white)] hover:text-[var(--color-mint-400)]"
                   href="https://www.linkedin.com/in/ryan-morris-a51b0777/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   <span className="inline-block">
                     Connect on LinkedIn
                     <UpRightArrow />
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </section>

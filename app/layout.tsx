@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Roboto_Condensed } from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-roboto",
@@ -44,6 +45,7 @@ export default function RootLayout({
           </div>
         </header>
         {children}
+        <Analytics />
       </body>
     </html>
   );

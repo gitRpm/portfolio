@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { track } from '@vercel/analytics';
 
 const ScrollLink: React.FC<any> = ({children, to, topThreshold, bottomThreshold, className, activeClassName, ...rest})  => {
   const [active, setActive] = useState(false);
@@ -35,6 +36,7 @@ const ScrollLink: React.FC<any> = ({children, to, topThreshold, bottomThreshold,
     if (element) {
       window.scroll({ behavior: "smooth", top: element.offsetTop });
     }
+    track(to);
   };
 
   return (
