@@ -56,7 +56,7 @@
   }
 
   .sticky-header {
-    @apply sticky top-0 mb-6 backdrop-blur-xs z-1 py-2 lg:hidden;
+    @apply sticky top-0 mb-6 backdrop-blur-xs z-1 py-4 lg:hidden;
   }
 
   .nav-header {

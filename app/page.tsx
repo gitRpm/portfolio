@@ -7,6 +7,7 @@ import { getSortedSkills } from './skill/services/skill-service';
 import ScrollLink from "./ui/scroll-link/scroll-link.component";
 import UpRightArrow from "./ui/arrow/up-right-arrow.component";
 import { Link } from "./ui/link/link.component";
+import { ScrollToTopButton } from "./ui/button/scroll-to-top.component";
 
 const Home = async () => {
   const jobs = await getJobs();
@@ -48,10 +49,10 @@ const Home = async () => {
             </h2>
             <div className="flex flex-col gap-6 lg:gap-12">
               <p className="pad-content">
-                I&apos;m a software engineer who loves turning ideas into clean, intuitive digital experiences. With a background in web development and a strong focus on user experience, I&apos;ve worked on everything from high-traffic retail platforms to SaaS applications and internal tools. Collaboration is a big part of how I work—partnering with cross-functional teams and always aiming to align technology with real business needs.
+                I&apos;m a software engineer who turns ideas into clean, intuitive digital experiences. With a background in web development and a focus on user experience, I&apos;ve built everything from retail platforms to SaaS apps and internal tools. I thrive in cross-functional teams, always aligning tech with real business needs.
               </p>
               <p className="pad-content">
-                What drives me most is creating software that makes people&apos;s lives easier. I get excited about clean architecture, thoughtful design, and simple, testable code. Whether I&apos;m creating user-friendly frontends or structuring backend logic to meet business needs, my goal is to build things that are not only functional but genuinely useful and enjoyable to use.
+                What drives me is creating software that makes life easier—through clean architecture, thoughtful design, and simple, testable code. Whether on the frontend or backend, my goal is to build solutions that are both functional and genuinely enjoyable to use.
               </p>
             </div>
           </section>
@@ -116,6 +117,9 @@ const Home = async () => {
           <p>Hosted on <b>Vercel.</b></p>
         </footer>
       </div>
+      <span className="lg:hidden">
+        <ScrollToTopButton />
+      </span>
     </>
   );
 }
