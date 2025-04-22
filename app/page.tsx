@@ -90,7 +90,7 @@ const Home = async () => {
             </h2>
             <div className="pad-content flex flex-col flex-nowrap gap-6 lg:gap-12 last-section">
               <p>
-                I&apos;m always looking to grow by exploring new technologies and expanding my skill set. Lately, I&apos;ve been diving into AI and machine learning to see how they can enhance the solutions I build. Check back soon for a chatbot I’m currently developing for this site!
+                I&apos;m always looking to grow by exploring new technologies and expanding my skill set. Lately, I&apos;ve been working with AI to see how it can enhance the solutions I build. Check back soon for a chatbot I&apos;m currently developing for this site!
               </p>
               <p>
                 If you&apos;re working on something exciting or just want to connect and chat tech, feel free to reach out!
