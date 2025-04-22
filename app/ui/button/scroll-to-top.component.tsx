@@ -40,7 +40,7 @@ export const ScrollToTopButton: React.FC = () => {
         fill="currentColor"
         className="w-8 h-8"
       >
-        <g id="SVGRepo_bgCarrier" strokeWidth="0" />
+        <g id="SVGRepo_bgCarrier" stroke-width="0" />
         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
         <g id="SVGRepo_iconCarrier">
           <title>arrow-up-circle</title>
@@ -49,7 +49,7 @@ export const ScrollToTopButton: React.FC = () => {
           <g
             id="Page-1"
             stroke="none"
-            strokeWidth="1"
+            stroke-width="1"
             fill="none"
             fillRule="evenodd"
           >

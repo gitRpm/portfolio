@@ -7,7 +7,7 @@ export const jobs: Job[] = [
     company: "DriveTime",
     startDate: new Date("2024-01-01"),
     endDate: null,
-    description: "Developed customer-facing experiments to optimize conversion rates and collaborated with cross-functional teams to integrate financing options for third parties. Designed and maintained CI/CD pipelines for reliable, automated deployments. Responsible for end-to-end software development lifecycle, including development, testing, deployment, and monitoring of all deliverables.",
+    description: "Developed customer-facing experiments to optimize conversion rates, collaborating with cross-functional teams to integrate third-party financing options. Designed and maintained CI/CD pipelines for reliable, automated deployments. Responsible for end-to-end software development lifecycle, including development, testing, deployment, and monitoring of all deliverables.",
     imageUrl: "https://via.placeholder.com/150",
     link: "https://drivetime.com",
     skills: [3, 4, 12, 26, 10, 9],
