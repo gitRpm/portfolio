@@ -28,35 +28,26 @@ const JobList: React.FC<{ jobs: Job[]}> = async ({ jobs = [] }) => {
   });
 
   return (
-    <>
-      <div className="flex flex-col gap-16 lg:gap-24">
-        {jobs.sort((a: Job, b: Job) => b.startDate.getTime() - a.startDate.getTime()).map((job: Job) => {
-          const meta = formatDateRange(job.startDate, job.endDate, job.current);
-          const attributes = job.skills.map((skillId: number) => {
-            const skill = skills.find((skill: Skill) => skill.id === skillId);
-            return skill?.title})
-          return (
-            <ContentCard
-              key={job.id}
-              title={job.title}
-              subtitle={job.company}
-              description={job.description}
-              meta={meta}
-              attributes={attributes}
-              url={job.link}
-              ariaLabel={job.title}
-            />
-          );
-        })}
-      </div>
-      <div className="mt-10">
-        <a className='font-bold hover:text-[var(--color-white)]' href='/resume.pdf' target='_blank' rel='noopener noreferrer'>   
-          View resume
-        </a>
-      </div>
-      
-    </>
-    
+    <div className="flex flex-col gap-16 lg:gap-24">
+      {jobs.sort((a: Job, b: Job) => b.startDate.getTime() - a.startDate.getTime()).map((job: Job) => {
+        const meta = formatDateRange(job.startDate, job.endDate, job.current);
+        const attributes = job.skills.map((skillId: number) => {
+          const skill = skills.find((skill: Skill) => skill.id === skillId);
+          return skill?.title})
+        return (
+          <ContentCard
+            key={job.id}
+            title={job.title}
+            subtitle={job.company}
+            description={job.description}
+            meta={meta}
+            attributes={attributes}
+            url={job.link}
+            ariaLabel={job.title}
+          />
+        );
+      })}
+    </div>
   );
 };
 

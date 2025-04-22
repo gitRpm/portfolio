@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const ScrollLink: React.FC<any> = ({children, to, topThreshold, bottomThreshold, className, activeClassName, ...rest})  => {
   const [active, setActive] = useState(false);

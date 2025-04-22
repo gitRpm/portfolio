@@ -41,13 +41,13 @@
   }
 
   h2 {
-    @apply font-medium font-(family-name:--font-geist-mono)
+    @apply font-normal font-(family-name:--font-geist-mono)
     text-xl
     md:text-2xl;
   }
 
   h3 {
-    @apply font-bold
+    @apply font-medium
     text-lg;
   }
 
@@ -60,13 +60,16 @@
   }
 
   .nav-header {
-    @apply font-(family-name:--font-geist-mono) font-normal
+    @apply font-(family-name:--font-geist-mono) font-light hover:font-medium hover:text-[var(--color-white)]
     text-xl
-    md:text-2xl;
+    lg:text-base;
   }
 
-  .nav-active, .default-nav-active {
-    @apply text-[var(--color-white)] font-medium border-b-[var(--color-white)] border-b-2;
+  .nav-active {
+    .nav-header {
+      @apply text-[var(--color-white)] font-medium border-b-[var(--color-white)];
+    }
+    @apply border-b-2 -mb-[2px];
   }
 
   .custom-blur {
@@ -75,6 +78,14 @@
 
   .max-minus-header {
     @apply max-h-[calc(100vh-4rem)];
+  }
+
+  p {
+    @apply leading-8;
+  }
+
+  .last-section {
+    @apply lg:min-h-[calc(100vh-16rem)];
   }
 }
 
