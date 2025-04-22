@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
           }}
         >
           <span className="inline-block">
-            Let's Connect
+            Let&apos;s Connect
             <UpRightArrow />
           </span>
         </a>

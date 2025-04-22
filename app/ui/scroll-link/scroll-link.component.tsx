@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { track } from '@vercel/analytics';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const ScrollLink: React.FC<any> = ({children, to, topThreshold, bottomThreshold, className, activeClassName, ...rest})  => {
   const [active, setActive] = useState(false);
 
@@ -28,7 +29,7 @@ const ScrollLink: React.FC<any> = ({children, to, topThreshold, bottomThreshold,
     return () => {
       window.removeEventListener("scroll", () => {});
     }
-  }, [to]);
+  }, [to, topThreshold, bottomThreshold]);
 
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();

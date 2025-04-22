@@ -1,5 +1,4 @@
 
-import Image from "next/image";
 import Hero from "@/ui/hero/hero.component";
 import SkillList from "@/skill/components/skill-list.component";
 import JobList from "@/job/components/job-list.component";
@@ -49,10 +48,10 @@ const Home = async () => {
             </h2>
             <div className="flex flex-col gap-6 lg:gap-12">
               <p className="pad-content">
-                I'm a software engineer who loves turning ideas into clean, intuitive digital experiences. With a background in web development and a strong focus on user experience, I’ve worked on everything from high-traffic retail platforms to SaaS applications and internal tools. Collaboration is a big part of how I work—partnering with cross-functional teams and always aiming to align technology with real business needs.
+                I&apos;m a software engineer who loves turning ideas into clean, intuitive digital experiences. With a background in web development and a strong focus on user experience, I&apos;ve worked on everything from high-traffic retail platforms to SaaS applications and internal tools. Collaboration is a big part of how I work—partnering with cross-functional teams and always aiming to align technology with real business needs.
               </p>
               <p className="pad-content">
-                What drives me most is creating software that makes people’s lives easier. I get excited about clean architecture, thoughtful design, and simple, testable code. Whether I’m creating user-friendly frontends or structuring backend logic to meet business needs, my goal is to build things that are not only functional but genuinely useful and enjoyable to use.
+                What drives me most is creating software that makes people&apos;s lives easier. I get excited about clean architecture, thoughtful design, and simple, testable code. Whether I&apos;m creating user-friendly frontends or structuring backend logic to meet business needs, my goal is to build things that are not only functional but genuinely useful and enjoyable to use.
               </p>
             </div>
           </section>
@@ -86,14 +85,14 @@ const Home = async () => {
           </section>
           <section id='whatsnext'>
             <h2 className="sticky-header custom-blur">
-              <span className="pad-content">What's Next?</span>
+              <span className="pad-content">What&apos;s Next?</span>
             </h2>
             <div className="pad-content flex flex-col flex-nowrap gap-6 lg:gap-12 last-section">
               <p>
-                I’m always looking to grow by exploring new technologies and expanding my skill set. Lately, I’ve been diving into AI and machine learning to see how they can enhance the solutions I build. Check back soon for a chatbot I’m currently developing for this site!
+                I&apos;m always looking to grow by exploring new technologies and expanding my skill set. Lately, I&apos;ve been diving into AI and machine learning to see how they can enhance the solutions I build. Check back soon for a chatbot I’m currently developing for this site!
               </p>
               <p>
-                If you’re working on something exciting or just want to connect and chat tech, feel free to reach out!
+                If you&apos;re working on something exciting or just want to connect and chat tech, feel free to reach out!
               </p>
               <div>
                 <Link
