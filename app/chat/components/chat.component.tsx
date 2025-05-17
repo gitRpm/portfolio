@@ -46,7 +46,6 @@ const Chat: React.FC = () => {
             `py-4 mb-4 self-start lg:px-4` :
             `bg-[var(--foreground)] text-[var(--color-background)] py-2 px-8 rounded-full mb-2 self-end [&_p]:leading-6 `}>
           {message.parts.map((part, index) => {
-            console.log('part', `${message.id}-${index}`);
             switch (part.type) {
               case 'text':
                 return <MemoizedMarkdown key={`${message.id}-${index}`} id={`${message.id}-${index}`} content={part.text} />;

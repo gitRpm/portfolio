@@ -24,7 +24,6 @@ export async function POST(req: Request) {
         description: 'Get Ryan\'s job experience.',
         parameters: z.object({}),
         execute: async () => {
-          console.log('getJobs tool called');
           const jobs = await getJobs();
           return JSON.stringify(jobs);
         }
@@ -33,7 +32,6 @@ export async function POST(req: Request) {
         description: 'Get Ryan\'s skills.',
         parameters: z.object({}),
         execute: async () => {
-          console.log('getSkills tool called');
           const skills = await getSkills();
           return JSON.stringify(skills);
         }
@@ -42,7 +40,6 @@ export async function POST(req: Request) {
         description: 'Get Ryan\'s education.',
         parameters: z.object({}),
         execute: async () => {
-          console.log('getEducation tool called');
           return 'Kaplan University, Bachelor of Science in Information Technology, 2014';
         }
       }
