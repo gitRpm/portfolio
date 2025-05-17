@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Roboto_Condensed } from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-roboto",
@@ -36,12 +37,23 @@ export default function RootLayout({
       >
         <header className="lg:fixed top-0 custom-blur w-full h-20 z-99">
           <div className="px-6 flex items-center justify-between h-full mx-auto lg:max-w-screen-xl md:px-12 lg:px-12">
-            <Image
-              src="/code.svg"
-              alt="Code Icon"
-              width={40}
-              height={40}
-            />
+            <Link href="/">
+              <Image
+                src="/code.svg"
+                alt="Code Icon"
+                width={40}
+                height={40}
+              />
+            </Link>
+            <Link href="/chat" className="flex items-center gap-2">
+              <span className="text-normal text-[var(--color-white)] hidden lg:block hover:text-[var(--color-mint-400)]">Chat with Rybot!</span>
+              <Image
+                src="/chatbot.svg"
+                alt="Chat Icon"
+                width={40}
+                height={40}
+              />
+            </Link>
           </div>
         </header>
         {children}

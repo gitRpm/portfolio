@@ -30,7 +30,7 @@ export const ScrollToTopButton: React.FC = () => {
   return (
     <button
       onClick={handleClick}
-      className={`${show ? 'transition-none opacity-100' : 'duration-1000 ease-in-out transition-opacity opacity-0'} fixed bottom-4 right-4 z-100 p-2 my-4 rounded-full shadow-md hover:bg-[var(--color-mint-200)] focus:outline-none transition duration-200 ease-in-out`}
+      className={`${show ? 'transition-none opacity-100' : 'duration-1000 ease-in-out transition-opacity opacity-0'} fixed bottom-2 right-4 z-100 p-2 my-4 rounded-full shadow-md hover:bg-[var(--color-mint-200)] focus:outline-none transition duration-200 ease-in-out`}
     >
       
       <svg
@@ -40,8 +40,8 @@ export const ScrollToTopButton: React.FC = () => {
         fill="currentColor"
         className="w-8 h-8"
       >
-        <g id="SVGRepo_bgCarrier" stroke-width="0" />
-        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+        <g id="SVGRepo_bgCarrier" strokeWidth="0" />
+        <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
         <g id="SVGRepo_iconCarrier">
           <title>arrow-up-circle</title>
           <desc>Created with Sketch Beta.</desc>
@@ -49,7 +49,7 @@ export const ScrollToTopButton: React.FC = () => {
           <g
             id="Page-1"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
             fill="none"
             fillRule="evenodd"
           >

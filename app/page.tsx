@@ -52,7 +52,7 @@ const Home = async () => {
                 I&apos;m a software engineer who turns ideas into clean, intuitive digital experiences. With a background in web development and a focus on user experience, I&apos;ve built everything from retail platforms to SaaS apps and internal tools. I thrive in cross-functional teams, always aligning tech with real business needs.
               </p>
               <p className="pad-content">
-                What drives me is creating software that makes life easier—through clean architecture, thoughtful design, and simple, testable code. Whether on the frontend or backend, my goal is to build solutions that are both functional and genuinely enjoyable to use.
+                What drives me is creating software that makes life easier through clean architecture, thoughtful design, and simple, testable code. Whether on the frontend or backend, my goal is to build solutions that are both functional and genuinely enjoyable to use.
               </p>
             </div>
           </section>
@@ -75,11 +75,9 @@ const Home = async () => {
                   href='/RyanMorris_Resume.pdf'
                   target='_blank'
                   rel='noopener noreferrer'
-                >   
-                  <span className="inline-block">
-                    View resume
-                    <UpRightArrow />
-                  </span>
+                >
+                  View resume
+                  <UpRightArrow />
                 </Link>
               </div>
             </div>
@@ -90,7 +88,12 @@ const Home = async () => {
             </h2>
             <div className="pad-content flex flex-col flex-nowrap gap-6 lg:gap-12 last-section">
               <p>
-                I&apos;m always looking to grow by exploring new technologies and expanding my skill set. Lately, I&apos;ve been working with AI to see how it can enhance the solutions I build. Check back soon for a chatbot I&apos;m currently developing for this site!
+                I&apos;m always looking to grow by exploring new technologies and expanding my skill set. Lately, I&apos;ve been working with AI to see how it can enhance the solutions I build. Check out the
+                <Link className='group/link font-bold text-[var(--color-white)] hover:text-[var(--color-mint-400)]' href='/chat' rel='noopener noreferrer'>
+                &nbsp;chatbot 
+                  <UpRightArrow />
+                </Link>
+                &nbsp;I made for this site!
               </p>
               <p>
                 If you&apos;re working on something exciting or just want to connect and chat tech, feel free to reach out!
@@ -102,10 +105,8 @@ const Home = async () => {
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  <span className="inline-block">
-                    Connect on LinkedIn
-                    <UpRightArrow />
-                  </span>
+                  Connect on LinkedIn
+                  <UpRightArrow />
                 </Link>
               </div>
             </div>
