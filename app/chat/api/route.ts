@@ -1,4 +1,4 @@
-import { streamText, Tool, tool } from 'ai';
+import { streamText } from 'ai';
 import { openai } from '@ai-sdk/openai';
 import { z } from 'zod';
 import { getJobs } from '@/job/services/job-service';
