@@ -34,7 +34,17 @@ const Chat: React.FC = () => {
   const textarea = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
-    textarea.current?.focus();
+    const lastMessage = messages[messages.length - 1];
+    const lastMessageElement = document.getElementById(lastMessage.id);
+    if (lastMessageElement) {
+      console.log(lastMessageElement.offsetTop + lastMessageElement.clientHeight);
+      window.scrollTo({
+        top: lastMessageElement.offsetTop + lastMessageElement.clientHeight,
+        behavior: 'smooth'
+      });
+    }
+
+    textarea.current?.focus();    
   }, [messages, status]);
 
   return (
@@ -42,6 +52,7 @@ const Chat: React.FC = () => {
       {messages.map(message => (
         <div
           key={message.id}
+          id={message.id}
           className={message.role === 'assistant' ?
             `py-4 mb-4 self-start lg:px-4` :
             `bg-[var(--foreground)] text-[var(--color-background)] py-2 px-8 rounded-full mb-2 self-end [&_p]:leading-6 `}>
