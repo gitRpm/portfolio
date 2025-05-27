@@ -34,17 +34,9 @@ const Chat: React.FC = () => {
   const textarea = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
-    const lastMessage = messages[messages.length - 1];
-    const lastMessageElement = document.getElementById(lastMessage.id);
-    if (lastMessageElement) {
-      console.log(lastMessageElement.offsetTop + lastMessageElement.clientHeight);
-      window.scrollTo({
-        top: lastMessageElement.offsetTop + lastMessageElement.clientHeight,
-        behavior: 'smooth'
-      });
-    }
-
-    textarea.current?.focus();    
+    if (status === 'ready') {
+      textarea.current?.focus();
+    } 
   }, [messages, status]);
 
   return (
